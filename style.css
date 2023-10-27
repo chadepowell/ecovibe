@@ -311,23 +311,27 @@ ul li {
 
 .featured {
   width: 100%;
+  padding: 100px;
+  margin-right: auto;
+  margin-left: auto;
   background-color: #81D5E1;
 }
 
 .section-title {
-  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
 .body .product1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
-  column-gap: 20px;
+  column-gap: 50px;
 }
 
 .image-container {
- /* display: grid;
-  position: relative;*/
+  display: grid;
+  position: relative;
+  padding-bottom: 30px;
 }
 
 .products .image {
