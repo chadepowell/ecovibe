@@ -352,7 +352,7 @@ ul li {
 
 .overlay-text {
   position: absolute;
-  bottom: 3%;
+  bottom: 13%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
@@ -373,6 +373,63 @@ ul li {
 .image-container:hover .overlay-text {
     opacity: 1;
 }
+
+.company_container{
+  width: 100%;
+  padding: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-A {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+
+.container-A {
+  background-color: #fff;
+  color: #0a0b0b;
+  letter-spacing: -0.2px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container-A .column-A h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 32px;
+  font-weight: 500;
+   line-height: 40px;
+}
+
+.container-A .column-A p {
+  padding-bottom: 20px;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+.column-A {
+  width: 100%;
+}
+
+.column-A ul {
+  padding-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+
+ul li {
+  margin-bottom: 10px; 
+}
+
+.column-B {
+  width: 100%;
+}
+
 
 
 
