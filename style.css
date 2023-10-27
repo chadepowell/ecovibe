@@ -314,20 +314,25 @@ ul li {
   background-color: #81D5E1;
 }
 
-.body .products {
+.section-title {
+  padding-top: 50px;
+}
+
+.body .product1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
   column-gap: 20px;
+}
+
+.image-container {
+ /* display: grid;
+  position: relative;*/
 }
 
 .products .image {
   height: 300px;
   background-size: cover;
-}
-
-.image-container {
-  position: relative;
-  display: flexbox;
 }
 
 .overlay {
