@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
 }
 
 .container {
@@ -50,7 +51,7 @@ li {
 .navbar {
   padding: 20px;
   background-color: #fff;
-  color: #0c0c0b;
+  color: #0e110e;
 }
 
 .navbar .container {
@@ -109,20 +110,30 @@ input[type=checkbox] {
 }
 
 .hero-section {
+  background-image: url(image/image7.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-section {
   height: 500px;
-  background-color: #141212;
 }
 
 .hero-section .content {
   position: absolute;
   top: 40%;
   bottom: 50%;
-  color: #fff;
+  color: #0e110e;
 }
 
+.content h1 {
+  font-size: 42px;
+}
 
 .content h1, p {
-  line-height: 40px;
+  line-height: 45px;
+  letter-spacing: 1px;
 }
 
 .content-btn {
@@ -146,8 +157,15 @@ button {
 
 .container_details {
   width: 100%;
-  background-color: #F6FFF2;
 }
+
+.container_details {
+  background-color: #F6FFF2;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
 .container_box .box img {
   width: 70px;
@@ -164,15 +182,13 @@ button {
 
 .container_details .container_box .box {
   background-color: transparent;
-  border-radius: 3px;
-  box-shadow: 4px 4px 6px #817f7ff0;
   text-align: center;
   padding: 40px 50px;
 }
 
 .container_box .box h3 {
-  color: #141212;
-  font-size: 25px;
+  color: #0e0b0b;
+  font-size: 20px;
   font-weight: 500;
   margin-bottom: 17px;
   text-transform: capitalize;
@@ -180,15 +196,16 @@ button {
 }
 
 .container_box .box p {
-  color: #141212;
+  color: #0e0b0b;
   font-size: 16px;
   font-weight: 300;
+  line-height: 1.5rem;
   padding-bottom: 30px;
 }
 
 .container_box .box a {
   font-size: 14px;
-  color: #0e0f0e;
+  color: #0e0b0b;
   border-radius: 0;
 }
 
@@ -224,7 +241,7 @@ button {
   padding-bottom: 20px;
   font-size: 32px;
   font-weight: 500;
-   line-height: 40px;
+  line-height: 40px;
 }
 
 .container1 .column-1 p {
