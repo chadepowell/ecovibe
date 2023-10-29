@@ -15,6 +15,33 @@ body {
   width: 100%
 }
 
+.button-style {
+  all: unset;
+  outline: revert;
+  border-radius: 2px;
+  text-align: center;
+  border-width: 1px;
+  padding: 15px 35px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  background: #538742;
+  border-color: #CCCCCC;
+  color: #F6FFF2;
+  transition: background-color 0.3s ease;
+}
+
+.button-style:hover {
+  background-color: #0e110e;
+}
+
+button.button-style {
+  background: #538742;
+  border-color: #CCCCCC;
+  color: #F6FFF2;
+}
+
 @media (min-width:768px) {
   .container {
     max-width: 720px
@@ -39,74 +66,49 @@ body {
     max-width: 1200px
   }
 }
-
-a {
-  text-decoration: none;
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #F6FFF2;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
 }
-
-li {
+ 
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
-.navbar {
-  padding: 20px;
-  background-color: #fff;
-  color: #0e110e;
+nav ul li{
+  margin: 0 5px;
 }
 
-.navbar .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-links a {
+nav ul li a{
   color: #0e110e;
   text-decoration: none;
-}
-
-.logo {
-  font-size: 24px;
-}
-
-.menu {
-  display: flex;
-  gap: 1em;
-  font-size: 18px;
-}
-
-menu .li {
-  padding: 5px 14px;
-  text-decoration: none;
-}
-
-.nav-btn {
-  all: unset;
-  outline: revert;
-  border-radius: 2px;
-  text-align: center;
-  border-width: 1px;
-  padding: 13px 35px;
   font-size: 14px;
-  cursor: pointer;
+  font-weight: 500;
+  padding: 8px 15px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a.active.button-style {
   background: #538742;
   border-color: #CCCCCC;
-  color: #ffff;
+  color: #F6FFF2;
+}
+nav ul li a.active.button-style:hover {
+  background-color: #F6FFF2;
+  color: #538742;
 }
 
-.nav-btn:hover {
-  background-color: #e6ab37;
-}
-
-input[type=checkbox] {
-  display: none;
-}
-
-.hamburger {
-  display: none;
-  font-size: 24px;
-  user-select: none;
+nav ul li a:hover{
+  color: #538742;
 }
 
 .hero-section {
@@ -136,24 +138,7 @@ input[type=checkbox] {
   letter-spacing: 1px;
 }
 
-.content-btn {
-  margin-top: 20px;
-}
-
-button {
-  all: unset;
-  outline: revert;
-  border-radius: 2px;
-  text-align: center;
-  border-width: 1px;
-  padding: 13px 35px;
-  font-size: 14px;
-  cursor: pointer;
-  background: #538742;
-  border-color: #CCCCCC;
-  color: #ffff;
-}
-
+ 
 
 .container_details {
   width: 100%;
@@ -184,6 +169,8 @@ button {
   background-color: transparent;
   text-align: center;
   padding: 40px 50px;
+  border-radius: 2px;
+  box-shadow: 3px 3px 5px #e3e4e6;
 }
 
 .container_box .box h3 {
@@ -268,20 +255,6 @@ ul li {
   
 }
 
-.shop-btn {
-  all: unset;
-  outline: revert;
-  border-radius: 2px;
-  text-align: center;
-  border-width: 1px;
-  padding: 13px 35px;
-  font-size: 14px;
-  cursor: pointer;
-  background: #538742;
-  border-color: #CCCCCC;
-  color: #ffff;
-}
-
 .column-2 {
   width: 100%;
 }
@@ -291,7 +264,7 @@ ul li {
   padding: 100px;
   margin-right: auto;
   margin-left: auto;
-  background-color: #81D5E1;
+  background-color: #ffffff;
 }
 
 .section-title {
@@ -308,7 +281,7 @@ ul li {
 .image-container {
   display: grid;
   position: relative;
-  padding-bottom: 30px;
+  padding: 30px;
 }
 
 .products .image {
@@ -377,7 +350,7 @@ ul li {
   padding-bottom: 20px;
   font-size: 32px;
   font-weight: 500;
-   line-height: 40px;
+  line-height: 40px;
 }
 
 .container-A .column-A p {
@@ -406,56 +379,16 @@ ul li {
 .column-B {
   width: 100%;
 }
+ 
+.image-a {
+  max-width: 100%;
+  clip-path: circle(35%);
+  transition: 1s;
+}
 
-
-
-
-
-
-
-
-
-
-
-/* @media (max-width: 768px) {
-    .menu {
-       display:none;
-       position: absolute;
-       background-color:teal;
-       right: 0;
-       left: 0;
-       text-align: center;
-       padding: 16px 0;
-     }
-   
-     .menu li:hover {
-       display: inline-block;
-       background-color:#4c9e9e;
-       transition: 0.3s ease;
-     }
-   
-     .menu li + li {
-       margin-top: 12px;
-     }
-   
-     input[type=checkbox]:checked ~ .menu {
-       display: block;
-     }
-   
-     .hamburger {
-       display: block;
-     }
-   
-     .dropdown {
-       left: 50%;
-       top: 30px;
-       transform: translateX(35%);
-     }
-   
-     .dropdown li:hover {
-       background-color: #4c9e9e;
-     }
-   }
+.image-a:hover {
+  clip-path: circle(20%);
+}
 
 
   
