@@ -144,8 +144,7 @@ nav ul li a:hover{
   width: 100%;
 }
 
-.container_details {
-  background-color: #F6FFF2;
+ .container_details  {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
