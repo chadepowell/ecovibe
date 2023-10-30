@@ -70,7 +70,7 @@ nav{
   display: flex;
   height: 80px;
   width: 100%;
-  background: #F6FFF2;
+  background: #FFFFFF;
   align-items: center;
   justify-content: space-between;
   padding: 0 50px 0 100px;
@@ -103,7 +103,7 @@ nav ul li a.active.button-style {
   color: #F6FFF2;
 }
 nav ul li a.active.button-style:hover {
-  background-color: #F6FFF2;
+  background-color: #FFFFFF;
   color: #538742;
 }
 
