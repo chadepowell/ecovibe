@@ -453,6 +453,96 @@ ul li {
     align-items: center;
 }
 
+footer {
+  background-color: #F9F9F9;
+  padding: 80px 80px;
+  color: #ddd;
+  text-align: center;
+}
 
+footer ul {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer ul li:last-child {
+  margin-right: 0;
+}
+
+footer ul li a {
+  color: #8d8989;
+  font-size: 13px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer ul li a:hover {
+  color:#fff ;
+}
+
+.logo-footer {
+  display:flex;
+  align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .logo-footer img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
   
+  .word {
+    font-size: 23px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 3px;
+    padding-top: 20px;
+  }
+
+  .footer-icons {
+    font-size: 15px;
+    color:  #8d8989 ;
+    display: inline-flex;
+    justify-content: center;
+    height: 90px;
+    gap: 30px;
+  }
+
+  .footer-icons :hover{
+    color:#fff;
+  }
+  .footer-icons i {
+    margin-right: 10px;
+    padding-top: 20px;
+  }
+  
+  .all-rights {
+    text-align: center;
+    color: #8d8989;
+    margin: 0;
+  }
+  
+  .all-rights:hover {
+    color: #fff;
+  }
+
+  .all-rights strong {
+    transition: color 0.3s;
+  }
+
+  .all-rights strong:hover {
+    color: #8d8989;
+  }
+
+
   
