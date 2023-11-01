@@ -250,7 +250,7 @@ ul {
 
 
 ul li {
-  margin-bottom: 30px;
+  margin-bottom: 19px;
   
 }
 
@@ -263,10 +263,12 @@ ul li {
   padding: 100px;
   margin-right: auto;
   margin-left: auto;
-  background-color: #ffffff;
+  background-color: #D8E0E3;
 }
 
 .section-title {
+  display: grid;
+  justify-content: center;
   padding-bottom: 30px;
 }
 
@@ -274,7 +276,7 @@ ul li {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
-  column-gap: 50px;
+  column-gap: 30px;
 }
 
 .image-container {
@@ -309,11 +311,12 @@ ul li {
   opacity: 0;
   transition: opacity 0.5s ease;
   display: inline-block;
-  padding: 8px 10px;
+  padding: 7px 9px;
   background-color: #0c0606;
   border: none;
   border-radius: 5px;
   text-align: center;
+  font-size: 14px;
   text-decoration: none;
   cursor: pointer;
 }
@@ -372,7 +375,7 @@ ul {
 
 
 ul li {
-  margin-bottom: 30px; 
+  margin-bottom: 19px; 
 }
 
 .column-B {
