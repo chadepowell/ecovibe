@@ -301,6 +301,7 @@ ul li {
   display: grid;
   position: relative;
   padding: 30px;
+  text-align: center;
 }
 
 .products .image {
