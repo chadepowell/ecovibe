@@ -290,7 +290,7 @@ ul li {
   padding: 100px;
   margin-right: auto;
   margin-left: auto;
-  background-color: #D8E0E3;
+  background-color: #f8f0f07f;
 }
 
 .section-title {
@@ -418,6 +418,24 @@ ul li {
 
 .image-a:hover {
   clip-path: circle(20%);
+}
+
+.company-sponsor {
+    padding: 40px 20px;
+    background-color: #A9DAE1;
+}
+
+.company-sponsor .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+.company-sponsor .sponsor {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    column-gap: 10px;
+    align-items: center;
 }
 
 
