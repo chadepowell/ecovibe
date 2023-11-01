@@ -18,7 +18,7 @@ body {
 p {
   color: #0e0b0b;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5rem;
 }
 
@@ -210,13 +210,15 @@ nav ul li a:hover{
 .container_box .box p {
   color: #0e0b0b;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5rem;
   padding-bottom: 30px;
 }
 
 .container_box .box a {
   font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
   color: #0e0b0b;
   border-radius: 0;
 }
