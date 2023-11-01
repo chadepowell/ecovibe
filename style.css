@@ -154,9 +154,16 @@ nav ul li a:hover{
   color: #0e110e;
 }
 
-.content h1, p {
-  line-height: 45px;
+.content h1, h6, p {
   letter-spacing: 1px;
+}
+
+.content h6 {
+  color: #fff;
+}
+
+.content p {
+  padding-bottom: 30px;
 }
 
 .container_details {
