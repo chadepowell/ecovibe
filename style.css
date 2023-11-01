@@ -15,6 +15,15 @@ body {
   width: 100%
 }
 
+h2 {
+  font-size: 32px;
+  
+}
+
+h1 {
+  font-size: 42px;
+}
+
 .button-style {
   all: unset;
   outline: revert;
@@ -129,16 +138,10 @@ nav ul li a:hover{
   color: #0e110e;
 }
 
-.content h1 {
-  font-size: 42px;
-}
-
 .content h1, p {
   line-height: 45px;
   letter-spacing: 1px;
 }
-
- 
 
 .container_details {
   width: 100%;
@@ -225,7 +228,6 @@ nav ul li a:hover{
 .container1 .column-1 h2 {
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 32px;
   font-weight: 500;
   line-height: 40px;
 }
