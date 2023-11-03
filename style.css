@@ -148,15 +148,22 @@ nav ul li a:hover{
 }
 
 .hero-section {
-  height: 500px;
+  height: 720px;
 }
 
 .hero-section .content {
   display: block;
-   padding-top: 100px;
+  position: absolute;
+  top: 250px ;
   color: #0e110e;
   line-height: 1.5;
   text-align: center;
+}
+
+.content .svg {
+  width: 20px;
+  height: 20px;
+  margin: 8px;
 }
 
 .content h1, h6, p {
