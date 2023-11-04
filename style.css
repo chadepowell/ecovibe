@@ -104,6 +104,7 @@ nav{
   padding: 0 50px 0 100px;
   flex-wrap: wrap;
   position: fixed;
+  z-index: 999;
 }
  
 nav ul{
@@ -160,12 +161,6 @@ nav ul li a:hover{
   text-align: center;
 }
 
-.content .svg {
-  width: 20px;
-  height: 20px;
-  margin: 8px;
-}
-
 .content h1, h6, p {
   letter-spacing: 1px;
 }
@@ -180,10 +175,16 @@ nav ul li a:hover{
 
 .container_details {
   width: 100%;
+  padding: 100px;
 }
 
  .container_details  {
   background-color: #F6FFF2;
+}
+
+.section-titleA {
+  text-align: center;
+  padding-top: 60px;
 }
 
 
