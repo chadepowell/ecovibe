@@ -1,6 +1,11 @@
 const buttons = document.querySelectorAll('button');
 
 function showPrompt(event) {
+    // If nav button is clicked, do nothing
+    if ( event.target.parentElement == document.querySelector( 'nav .toggler' ) ) {
+        return;
+    }
+
     alert('You clicked OK. Proceeding...');
 
     const userResponse = prompt('Do you want to proceed? (Yes or No)').toLowerCase();

@@ -4,15 +4,15 @@
   box-sizing: border-box;
 }
 
+body, html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 20px;
-  width: 100%
+  overflow-x: hidden;
 }
 
 p {
@@ -23,7 +23,7 @@ p {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 30px;
   color:#0e0b0b;
 }
 
@@ -41,7 +41,6 @@ h5 {
 h6 {
   font-size: 14px;
 }
-
 
 .button-style {
   all: unset;
@@ -70,54 +69,62 @@ button.button-style {
   color: #F6FFF2;
 }
 
-@media (min-width:768px) {
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%
+}
+
+@media ( min-width:768px ) {
   .container {
-  max-width: 720px
+    max-width: 720px
   }
 }
 
-@media (min-width:992px) {
+@media ( min-width:992px ) {
+  h1 {
+    font-size: 50px;
+  }
+
   .container {
-  max-width: 960px;
-  padding: 0
+    max-width: 960px;
+    padding: 0
   }
 }
 
 @media (min-width:1200px) {
   .container {
-  max-width: 1150px
+    max-width: 1150px
   }
 }
 
-@media (min-width:1400px) {
-  .container {
-  max-width: 1200px
-  }
-}
-nav{
+/*------------------------------------------------------------------------*/
+/* Nav */
+/*------------------------------------------------------------------------*/
+nav {
   display: flex;
   height: 80px;
   width: 100%;
   background: #FFFFFF;
   align-items: center;
   justify-content: space-between;
-  padding: 0 50px 0 100px;
+  padding: 0 20px;
   flex-wrap: wrap;
   position: fixed;
   z-index: 999;
 }
  
-nav ul{
-  display: flex;
+nav ul {
+  display: none;
   flex-wrap: wrap;
   list-style: none;
 }
 
-nav ul li{
+nav ul li {
   margin: 0 5px;
 }
 
-nav ul li a{
+nav ul li a {
   color: #0e110e;
   text-decoration: none;
   font-size: 14px;
@@ -141,6 +148,42 @@ nav ul li a:hover{
   color: #33AB53;
 }
 
+.menu-toggle {
+  display: none;
+}
+
+nav .toggler {
+  display: block;
+  all: unset;
+  cursor: pointer;
+  outline: revert;
+  padding: 12px 0;
+  text-align: right;
+}
+
+nav .toggler svg {
+  fill: #222;
+  height: 42px;
+  width: 42px;
+}
+
+@media (min-width: 992px) {
+  nav {
+    padding: 0 50px 0 100px;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav .toggler {
+    display: none;
+  }
+}
+
+/*------------------------------------------------------------------------*/
+/* Hero */
+/*------------------------------------------------------------------------*/
 .hero-section {
   background-image: url(image/photo4.png);
   background-size: cover;
@@ -178,7 +221,14 @@ nav ul li a:hover{
   padding: 100px;
 }
 
- .container_details  {
+@media (min-width: 992px) {
+
+}
+
+/*------------------------------------------------------------------------*/
+/* Services */
+/*------------------------------------------------------------------------*/
+.container_details  {
   background-color: #F6FFF2;
 }
 
@@ -239,7 +289,9 @@ nav ul li a:hover{
   transition: all .5s;
 }
 
-
+/*------------------------------------------------------------------------*/
+/* Products */
+/*------------------------------------------------------------------------*/
 .product_container {
   width: 100%;
   padding: 100px;
@@ -315,6 +367,9 @@ ul li {
   width: 100%;
 }
 
+/*------------------------------------------------------------------------*/
+/* Featured Product */
+/*------------------------------------------------------------------------*/
 .featured {
   width: 100%;
   padding: 100px;
@@ -384,6 +439,9 @@ ul li {
   opacity: 1;
 }
 
+/*------------------------------------------------------------------------*/
+/* Why Choose Us */
+/*------------------------------------------------------------------------*/
 .company_container{
   width: 100%;
   padding: 100px;
@@ -450,6 +508,9 @@ ul li {
   clip-path: circle(20%);
 }
 
+/*------------------------------------------------------------------------*/
+/* Company Sponsors  */
+/*------------------------------------------------------------------------*/
 .company-sponsor {
   padding: 40px 20px;
   background-color: #FCF8F8;
@@ -468,6 +529,9 @@ ul li {
   align-items: center;
 }
 
+/*------------------------------------------------------------------------*/
+/* Footer  */
+/*------------------------------------------------------------------------*/
 footer {
   background-color: #181210;
   color: #ddd;
@@ -562,86 +626,7 @@ footer ul li a:hover {
   height: 150px;
 }
 
-
-@media (max-width: 767px) {
-  nav {
-    padding: 0 20px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    text-align: center;
-    background: #fff;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
-    display: none;
-    z-index: 999;
-  }
-
-  nav ul.active {
-    display: flex;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  .hero-section {
-    height: 500px;
-  }
-
-  .hero-section .content {
-    top: 200px;
-  }
-
-  .container_details {
-    padding: 50px;
-  }
-
-  .container_box {
-    flex-direction: column;
-    gap: 50px;
-    padding: 40px;
-  }
-
-  .container_box .box {
-    padding: 20px;
-  }
-
-  .container1 {
-    grid-template-columns: 1fr;
-  }
-
-  .column-2 img {
-    width: 100%;
-    height: auto;
-  }
-
-  .featured {
-    padding: 50px;
-  }
-
-  .body .product1 {
-    grid-template-columns: 1fr;
-  }
-
-  .image-container {
-    padding: 15px;
-  }
-
-  .overlay-text {
-    bottom: 10%;
-  }
-
-  .container-A {
-    grid-template-columns: 1fr;
-  }
-
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
   .container_details {
     padding: 80px;
   }
