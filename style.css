@@ -28,7 +28,7 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 500;
   line-height: 4rem;
 }
@@ -84,6 +84,10 @@ button.button-style {
 @media ( min-width:992px ) {
   h1 {
     font-size: 50px;
+  }
+
+  h2 {
+    font-size: 40px;
   }
 
   .container {
@@ -184,6 +188,12 @@ nav .toggler svg {
 /*------------------------------------------------------------------------*/
 /* Hero */
 /*------------------------------------------------------------------------*/
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%
+}
+
 .hero-section {
   background-image: url(image/photo4.png);
   background-size: cover;
@@ -202,6 +212,8 @@ nav .toggler svg {
   color: #0e110e;
   line-height: 1.5;
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .content h1, h6, p {
@@ -216,47 +228,66 @@ nav .toggler svg {
   padding-bottom: 30px;
 }
 
-.container_details {
-  width: 100%;
-  padding: 100px;
-}
-
 @media (min-width: 992px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%
+  }
 
+  .hero-section .content {
+    display: block;
+    position: absolute;
+    top: 250px ;
+    color: #0e110e;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0;
+  }
 }
 
 /*------------------------------------------------------------------------*/
 /* Services */
 /*------------------------------------------------------------------------*/
+.container_details {
+  width: 100%;
+  padding: 0;
+}
+
 .container_details  {
   background-color: #F6FFF2;
 }
 
 .section-titleA {
   text-align: center;
-  padding-top: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 
 .container_box .box img {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
 }
 
 .container_box {
-  display: flex;
+  position: relative;
   justify-content: space-between;
-  gap: 70px;
-  align-items: center;
-  padding: 80px;
+  
+  
 }
 
 .container_details .container_box .box {
   background-color: transparent;
   text-align: center;
-  padding: 40px 50px;
+  padding: 10px 10px;
   border-radius: 2px;
-  box-shadow: 3px 3px 5px #393939a0;
+  margin-bottom: 30px;
+}
+
+.container_details .container_box .box:nth-child(2) {
+  background-color: #fff;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
 }
 
 .container_box .box h3 {
@@ -284,9 +315,39 @@ nav .toggler svg {
   border-radius: 0;
 }
 
+
+@media (min-width: 992px) {
+  .container_details {
+    width: 100%;
+    padding: 100px;
+  }
+
+  .container_box .box img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .container_box {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  align-items: center;
+  padding: 80px;
+}
+
+.container_details .container_box .box {
+  background-color: transparent;
+  text-align: center;
+  padding: 40px 50px;
+  border-radius: 2px;
+  box-shadow: 3px 3px 5px #393939a0;
+}
+
 .container_box .box:hover {
-  background-color: #f0f3f191;
+  background-color: #fff;
   transition: all .5s;
+}
+
 }
 
 /*------------------------------------------------------------------------*/
@@ -294,15 +355,16 @@ nav .toggler svg {
 /*------------------------------------------------------------------------*/
 .product_container {
   width: 100%;
-  padding: 100px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
 
 .container1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
+  display: flex;
+  align-items: center;
+   
 }
 
 .container1 {
@@ -328,6 +390,10 @@ nav .toggler svg {
 
 .column-1 {
   width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .column-1 ul {
@@ -362,10 +428,35 @@ ul li {
 }
 
 .column-2 {
-  display: flex;
-  align-items: center;
+  display: none;
+   
+}
+
+@media (min-width: 992px) {
+  .product_container {
+    width: 100%;
+    padding: 100px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  }
+
+  .column-1 {
   width: 100%;
 }
+
+  .column-2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+}
+
 
 /*------------------------------------------------------------------------*/
 /* Featured Product */
