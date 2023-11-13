@@ -536,7 +536,7 @@ ul li {
 
 .overlay-text {
   position: absolute;
-  bottom: 13%;
+  bottom: 14%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
@@ -584,8 +584,29 @@ ul li {
   .image-container {
     display: grid;
     position: relative;
-    padding: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
     text-align: center;
+  }
+
+  .overlay-text {
+    position: absolute;
+    bottom: 19%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: inline-block;
+    padding: 7px 9px;
+    background-color: #0c0606;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
 
