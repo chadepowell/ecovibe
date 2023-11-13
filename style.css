@@ -319,7 +319,7 @@ nav .toggler svg {
 }
 
 .container_box .box a {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 400;
   text-decoration: none;
   color: #0e0b0b;
@@ -365,6 +365,14 @@ nav .toggler svg {
   font-weight: 400;
   line-height: 1.5rem;
   padding-bottom: 30px;
+}
+
+.container_box .box a {
+  font-size: 17px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #0e0b0b;
+  border-radius: 0;
 }
 
 }
